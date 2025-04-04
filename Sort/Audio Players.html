@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Audio Players</title>
+<link href="/Audio Players.css" rel="stylesheet" type="text/css">	
+
+	<script type="text/javascript">
+
+
+var music = document.getElementById('audio_player');
+ 
+function playAudio() {
+  if (music.paused) {
+    music.play();
+    pButton.className = "";
+    pButton.className = "pause";
+  } else {
+    music.pause();
+    pButton.className = "";
+    pButton.className = "play";
+  }
+}
+		function setVolume(volume) {
+   music.volume = volume;
+			
+				
+}
+</script>
+	</head>
+<body>
+
+	<div id="audioplayer" style="border: 1px solid black">	  
+  <button id="pButton" class="play" onclick="playAudio()"> </button>
+    <div id="timeline">
+    <div id="playhead"></div> 
+  </div>
+  <div id="volume_control">
+    <label id="rngVolume_label" for="rngVolume">Volume:</label>
+    <input type="range" onchange="setVolume(this.value)" id="rngVolume" min="0" max="1" step="0.01" value="0.5">
+  </div>
+</div>
+	
+
+
+</body>
+</html>

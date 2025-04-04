@@ -1,0 +1,36 @@
+@charset "UTF-8";
+body {
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	align-content: center;
+	text-align: center;
+}
+.video_responsive{
+	position:relative;
+	padding-bottom: 75%;
+	height: 0;
+	overflow: hidden;
+}
+.video_responsive video{
+	position: absolute;
+	top: 0px;
+	left: 10%;
+	right: 10%;
+	width: 80%;
+	height: 80%;
+}
+
+
+
+@media (max-width: 800){
+	.featured {
+	padding-top: 20px;
+	text-align:  center;
+		width:20%;
+}
+.featured_items{
+	width:20%;	
+}
+}

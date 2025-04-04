@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+:root {
+	
+	--lightBackground: transparent;
+	--lightestText: aliceblue;
+	
+	--mainFont: 'Lato', sans-serif;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+
+body {
+ /* display: flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--mainFont);*/
+}
+
+.container #construction{
+	text-align: center;
+	
+	
+}
+#construction h4{
+	color: var(--mainText);
+	background-color: var(--lightestBackground);
+	text-align: center;
+}
+
+.player-heading {
+  align-items: center;
+  justify-content: right;
+  font-family: var(--mainFont);
+  margin:0 0 0 15px; 
+  color: var(--lightestText);
+}
+.player-heading h2{
+	text-align: center;
+}
+
+.music-container {
+  background-color: var(--lightBackground);
+  border-radius: 15px;
+  /*box-shadow: 0 20px 20px 0 #555;*/
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+  position:relative;
+  margin: 20px 0;
+  
+}
+
+
+
+.img-container {
+  position: relative;
+  width: 110px;
+}
+
+.img-container::after {
+  content: '';
+  background-color: transparent;
+  /*border-radius: 50%;*/
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  width: 20px;
+  height: 20px;
+  /*transform: translate(-50%, 50%);*/
+}
+
+
+.img-container img {
+  border-radius: 50%;
+  object-fit: cover;
+  height: 110px;
+  width: inherit;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.action-btn {
+  background-color: var(--lightBackground);
+  border: 0;
+  /*color: #dfdbdf;*/
+	color: aliceblue;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 10px;
+  margin: 0 20px;
+}
+
+.action-btn.action-btn-big {
+  background-color: var(--lightBackground);
+  /*color: #cdc2d0;*/
+	color:aliceblue;
+  font-size: 30px;
+}
+
+.action-btn:focus {
+  outline: 0;
+}
+
+.music-info {
+	/*background-color:rgba(155,174,191,0.50);*/
+	background-color: transparent;
+	border-radius: 15px 15px 0 0;
+	position: absolute;
+	top: 0;
+	left: 20px;
+	width: calc(100% - 40px);
+	height:inherit;
+	padding: 10px 10px 40px 100px;
+	opacity: 0;
+	transform: translateY(0%);
+	transition: transform 0.3s ease-in, opacity 0.3s ease-in;
+	
+	display: flex;
+	flex-direction: row;
+}
+.music-info #durTime{
+	width: 50%;
+	float: right;
+	
+}
+.music-info #currTime{
+	width: 48%;
+	float: left;
+}
+
+.music-container.play .music-info {
+  opacity: 1;
+  transform: translateY(-100%);
+}
+
+.music-info h3 {
+  margin: 2%;
+}
+
+.progress-container {
+  background: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 10px 0;
+  height: 4px;
+  width: 100%;
+}
+
+.progress {
+  background-color: var(--mainText);
+  border-radius: 5px;
+  height: 100%;
+  width: 0%;
+  transition: width 0.1s linear;
+}
+
+.playlist-container {
+  width: 48%;
+  background-color: var(--lightBackground);
+  border-radius: 15px;
+  /*box-shadow: 0 20px 20px 0 #555;*/
+  display: flex;
+  flex-direction: column;
+  float: right;
+  padding: 20px;
+  padding: 20 20 40 20;
+  position: relative;
+  text-align: center;
+  margin: 30px 0;
+
+}
+.container .category-btn{
+  width: 100%;
+  background-color: var(--lightBackground);
+  border-radius: 15px;
+  /*box-shadow: 0 20px 20px 0 #555;*/
+  display: flex;
+  flex-direction: column;
+  float: right;
+  padding: 20px;
+  padding: 20 20 40 20;
+  position: relative;
+  text-align: center;
+  margin: 30px 0;
+  	
+}
+.category-btn{
+  width: 33%;
+  font-family: var(--mainFont);
+  border-radius: 15px;
+  background-color: var(--lightBackground);
+  /*box-shadow: 0 20px 20px 0 #555;*/
+  display: flex;
+  flex-direction: column;
+  float: right;
+  padding: 20px;
+  padding: 20 20 40 20;
+  position: relative;
+  text-align: center;
+  font-size: 14px;
+  margin: 30px 0;
+  
+}
+.lbl{
+	font-family: var(--mainFont);
+	width: 100%;
+	height: min 30px;
+	padding-left: 2%;
+	padding-bottom: 5%;
+	text-decoration: none;
+	border: none;
+	outline: none;
+	display: flex;
+	flex-flow: column;
+	text-align: left;
+	color: aliceblue;
+	background-color: transparent;
+	
+}
+
+

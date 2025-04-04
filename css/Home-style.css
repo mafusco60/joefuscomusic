@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+
+*{
+	box-sizing: border-box;
+}
+
+
+body {
+
+			background-size: contain;
+			background-image: url("/images/Beach-chairs.jpeg"), linear-gradient(#DFD6D0, #DFD6D0,#DFD6D0,#C4A984, #AF9572);
+			z-index: 10;
+			background-position:top;
+			align-content: center;
+			background-repeat: no-repeat;
+			font-family: var(--mainFont);
+			width: auto;
+			height: auto;
+			color: var(--mainText);
+			margin-top: 75px;
+			overflow-x: hidden;
+	background-position:top;
+	background-repeat: no-repeat;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 15%;
+}
+
+.header-container{
+	padding: 10% 20%;
+	
+}
+
+.logo-header{
+	font-family: dynalight;
+	color: var(--mainText);
+	/* text-shadow: 1px 1px 0 var(--shadowText); */
+	text-shadow: 2px 3px 5px #111, 2px 3px 5px #111;
+	font-size: 60px;
+	font-style: oblique;
+	font-weight: 1000;
+	letter-spacing: 15px;
+	text-align: center;
+	padding-top: 12%;
+
+}
+
+
+.gallery{ 
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	/* justify-content:space-between; */
+	text-align: center; 
+}
+
+
+.card{
+	margin: 15px;
+	background-color: rgb(187, 156, 120);
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	text-align: center;
+	width: 500px;
+	height: 500px;
+	text-shadow: 1px 1px 2px #111;
+	border-radius: 10px;
+	box-shadow: 1px 2px 4px #111;
+}
+.card h4{
+	text-shadow: var(--shadowText);
+	margin: 15px;
+
+}
+video{
+	width: 100%;
+	height: auto;
+}
+
+img{
+	max-width: 350px;
+	max-height: 300px;
+	border-radius: 5px;
+}
+
+ #big-time {
+	
+	border-radius: 5px;
+	width: 400px;
+	/* max-width: 250px; */
+}
+
+ #dream{
+	
+	
+	width: 350px;
+	/* max-width: 250px; */
+}
+
+ #hollywood{
+	
+	width: 350px;
+	/* max-width: 250px; */
+
+	@media (min-width: 850px) and (max-width: 1000px) {
+		.logo-header h2{
+			font-size: 45px;
+			letter-spacing: 10px;	
+			
+			}
+		}
+}
+
+
+	@media (min-width: 751px) and (max-width: 850px) {
+		.logo-header h2{
+			font-size: 40px;
+			letter-spacing: 10px;	
+			
+			}
+		}
+
+	/* tablets  small desktops */
+	@media (min-width: 451px) and (max-width: 750px) {
+
+	.logo-header h2{
+		font-size: 35px;
+		letter-spacing: 5px;
+	
+	}
+}
+
+
+/* mobile */
+@media (min-width: 351px) and (max-width: 450px) {
+	.logo-header h2{
+		font-size: 30px;
+		letter-spacing: 5px;
+	
+	}
+}
+
+/* small mobile */
+@media (max-width: 350px){
+	.logo-header h2{
+		font-size:25px;
+		letter-spacing: 5px;
+	
+	}
+}
